@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Products</title>
+    </head>
+
+    <body>
+        <table border="1"><!--for now, since the validator will complain about the border-->
+            <caption>Basic Table:</caption>
+            <tr>
+                <th>Header 1</th> <!-- th is bold, td is not-->
+                <th>Header 2</th>
+            </tr>
+            <tr>    
+                <td> Element 1</td>
+                <td> Element 2</td>
+            </tr>
+            <tr>    
+                <td> Element 1</td>
+                <td> Element 2</td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table border = "1">
+            <caption> 
+                Merged column:</caption>
+            <tr>
+                <td colspan ="2">Merged element</td>
+            </tr> <!--colspan expands it 2 columns-->
+            <tr>
+                <td> Element 1</td>
+                <td> Element 2</td>
+            </tr>
+            <tr>
+                <td> Element 1</td>
+                <td> Element 2</td>
+            </tr>
+        </table>
+        
+        <hr>
+        
+        <table border = "1">
+            <caption> Merged row:</caption>
+            <tr>
+                <td colspan ="2">Merged element</td>
+            </tr> 
+            <tr>
+                <td rowspan="2"> Element 1</td> <!--rowspan expands it 2 rows-->
+                <td> Element 2</td>
+            </tr>
+            <tr>
+                <td> Element 3</td>
+            </tr>
+        </table>
+    </body>
+</html>
