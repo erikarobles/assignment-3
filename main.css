@@ -1,0 +1,72 @@
+:root {
+    --top: #0b245b;
+    --side: #0253b3;
+    --back: #faf8ef;
+    --boxes: #93c9fa;
+    --text: #757575;    
+  }
+
+.container {
+    display: grid;
+    grid-gap: 150px;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+    background-image: url(images/pawel-czerwinski-jbSd3DCS_ig-unsplash.jpg);
+}
+
+.grid-item {
+    background-color: aliceblue;
+    padding: 20px
+}
+
+h1 {
+    background-color: aliceblue;
+}
+
+.dropbutton {
+  background-color: aliceblue;
+  color: var(--text);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropcontent {
+    display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropcontent a {
+  color: var(--text);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+
+.dropcontent li {
+    list-style: none;
+}
+
+.dropcontent a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+.dropdown:hover .dropbutton {
+    background-color: white;
+}
