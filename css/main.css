@@ -32,6 +32,24 @@ h1 {
     border: solid var(--focus);
 }
 
+
+img {
+    border-radius: 60%;
+    float: left;
+    border: solid 2px var(--text);
+    margin: 20px;
+}
+
+.info {
+    display: inline-block;
+}
+
+.grid2 {
+    display: flex;
+}
+
+/* navbar */ 
+
 .dropbutton {
   background-color: var(--background);
   color: var(--text);
@@ -82,21 +100,6 @@ h1 {
     background-color: var(--hover);
 }
 
-img {
-    border-radius: 60%;
-    float: left;
-    border: solid 2px var(--text);
-    margin: 20px;
-}
-
-.info {
-    display: inline-block;
-}
-
-.grid2 {
-    display: flex;
-}
-
 .nav2 {
     display: none;
     
@@ -117,7 +120,9 @@ nav a:hover {
         height: 50%;
     }
 
-@media screen  and (min-width: 850px) {
+/* medium screen */
+
+@media screen  and (min-width: 600px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -168,6 +173,12 @@ nav a:hover {
         grid-area: 5 / 1 / 6 / 4;
 
     }
+
+}
+
+/* large screen */
+
+@media screen  and (min-width: 850px) {
 
     .navbar2 {
         display: flex;
