@@ -4,13 +4,15 @@
     
   }
 
-.container {
-
-}
-
 body {
     background-color: lightgoldenrodyellow;
     background-image: url(images/pastel.jpg);
+    
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 
+    
     color: var(--text);
     font-family: 'Source Sans Pro', 'Nunito', 'Work Sans', sans-serif;
 }
@@ -56,7 +58,6 @@ h1 {
   text-decoration: none;
   display: block;
   text-transform: uppercase;
-
 }
 
 .dropcontent li {
@@ -88,10 +89,23 @@ img {
 
 .grid2 {
     display: flex;
-
 }
 
-@media screen  and (min-width: 600px) {
+.nav2 {
+    display: none;
+}
+
+nav a:hover {
+    background-color: white;
+     border: solid black;
+    padding: 5px;
+}
+
+:focus {
+    outline: 2px solid black;
+}
+
+@media screen  and (min-width: 850px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -134,4 +148,47 @@ img {
         grid-area: 5 / 1 / 6 / 2;
     }
     
+    .navbar2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .nav2 ul li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    .nav2 ul li a {
+
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+
+        color: var(--text);
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+
+    .nav2 {
+
+        top: 0;
+        left: 0;
+        background-color:var(--background);
+        padding: 0px;
+        display: inline-flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+
+        width: 100%;
+
+    }
+    
+    .dropbutton {
+      display: none;
+    }
+
 }
