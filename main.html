@@ -8,13 +8,16 @@
         <title>Resume</title>
         <!--link href="reset.css" rel="stylesheet" type="text/css"-->
         <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro|Work+Sans&display=swap" rel="stylesheet">
         
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     </head>
     <body>
         <header>
+            
             <div class="dropdown">
+                
                 <button class="dropbutton">Menu</button>
                 <div class = dropcontent>
                     <nav class="navbar">
@@ -35,6 +38,9 @@
                                 <a class="navlink" href="main.html#achievements">Achievements</a>
                             </li>
                             <li class="nav-item">
+                                <a class="navlink" href="main.html#objectives">Objectives</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="navlink" href="contact.html">Contact</a>
                             </li>
                         </ul>
@@ -43,33 +49,50 @@
             </div>
             
             <h1>Erika Robles</h1>
-           
+            
         </header>
         
         <main class = "container">
-            <section class = "grid-item" id ="about">
+            <section class = "grid-item about" id ="about">
+
                 <h2>About</h2>
-                <p>
-                    Erika Robles
-                    Address: 83 Bit Meadow Grove NW
+                <img src="images/selfportrait1.jpg" height=130px width="130px" alt="Self Portrait of Erika Robles">
+                <ul class="info">
+                    <li>
+                        Age: 18
+                    </li>
+                    <li>
+                        Address: 83 Bit Meadow Grove NW
                     Calgary, Alberta T3K 1B6
-                    Phone: (403) 374-1785
-                    Email: erobl@mtroyal.ca
-                    <!--img src="images/me.jpg" height="300px"-->
-                </p>
+                    </li>
+                    <li> 
+                        Phone: (403) 374-1785
+                    </li>
+                    <li>
+                        Email: erobl@mtroyal.ca
+                    </li>
+                </ul>
             </section>
             
-            <section class = "grid-item" id = "education">
+            <section class = "grid-item education" id = "education">
                 <h2>Education</h2>
+                    <h4>
+                        Bachelor in Computer Information Systems
+                    </h4>
                 <p>
-                    Mount Royal University (Bachelor in Computer Information Systems)
-                    2019-Present
-                    Calgary Alberta
+                    Mount Royal University, Calgary Alberta, 2019-Present
                 </p>
+                
+                <h4>
+                    High School Diploma
+                </h4>
                 <p>
-                    Bishop Grandin High School (High School Diploma) 2019 Calgary, Alberta
+                    Bishop Grandin High School,
+                    Calgary, Alberta, 2019
                 </p>
-
+                
+            </section>
+            <section class = "grid-item courses"> 
                 <h2>Courses Taken</h2>
                     <ul>
                         <li>
@@ -97,7 +120,7 @@
                     </ul>     
             </section>
             
-            <section class = "grid-item" id = "work">
+            <section class = "grid-item work" id = "work">
                 <h2>Work Experience</h2>
                 <h3>
                     Kitchen and Service Staff 
@@ -141,6 +164,8 @@
                         After working for six months, promoted to a trainer. Responsible for training new employees so they are certified by crucial deadlines.
                     </li>
                 </ul>
+            </section>
+            <section class = "grid-item volunteer" >
 
                 <h2>Volunteer Experience</h2>
                 
@@ -166,11 +191,9 @@
                         Evenly distributing and assigning tasks to fellow mentors.
                     </li>
                 </ul>
-                
-                
             </section>
             
-            <section class = "grid-item" id = "skills">
+            <section class = "grid-item skills" id = "skills">
                 <h2>Skills</h2>
                    <ul>
                        <li>Reliable (Able to work in a team or independently)
@@ -189,10 +212,31 @@
                     </ul> 
             </section>
 
-            <section class = "grid-item" id = "achievements">
+            <section class = "grid-item achievements"id = "achievements">
                 <h2>Achievements</h2>
                 
-                <p>Dean's list and 4.0 GPA</p>
+                <ul>
+                    <li> Consistent Honour Roll in High School, 2017-2019
+                    </li>
+                    <li>
+                        Recieved a 4.0 GPA in the first semester of university and placed on the Dean's list.
+                    </li>
+                </ul>
+
+            </section>
+            
+            <section class = "grid-item objectives" id ="objectives">
+                
+                <h2>Objectives</h2>
+            
+                <p>
+                    My objective is to finish my degree in Computer Information Systems, and eventually work in the cyber security industry. 
+                </p>
+                
+                <video id="video" poster="images/circuit.jpg" controls width="420" height="360">
+                    <source src="images/cybersecurity.mp4" type="video/mp4">
+                </video>
+            
             </section>
 
         </main>
