@@ -1,0 +1,220 @@
+:root {
+    --text: #4d4d4d;  
+    --background:#e6f3ff;	
+    --hover: white;
+    --border: grey;
+    --focus: black;
+}
+
+html {
+
+    background-image: url(/images/pastel.jpg);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--text);
+
+    font-family: 'Roboto', 'Lato', 'Work Sans', sans-serif;
+}
+
+.grid-item {
+    background-color: var(--background);
+    padding: 20px;
+    margin: 20px;
+    border: solid var(--focus);
+}
+
+h1 {
+    background-color: var(--background);
+    padding: 50px;
+        margin: 20px;
+    border: solid var(--focus);
+}
+
+.dropbutton {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+    border: solid var(--focus);
+    text-transform:uppercase;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropcontent {
+    display: none;
+  position: absolute;
+  background-color: var(--background);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropcontent a {
+  color: var(--text);
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+
+.dropcontent li {
+    list-style: none;
+}
+
+.dropcontent a:hover {
+    background-color: var(--hover);
+}
+
+.dropdown:hover .dropcontent {
+    display: block;
+}
+
+.dropdown:hover .dropbutton {
+    background-color: var(--hover);
+}
+
+img {
+    border-radius: 60%;
+    float: left;
+    border: solid 2px var(--text);
+    margin: 20px;
+}
+
+.info {
+    display: inline-block;
+}
+
+.grid2 {
+    display: flex;
+}
+
+.nav2 {
+    display: none;
+    
+}
+
+nav a:hover {
+    background-color: var(--hover);
+     border: solid var(--focus);
+    padding: 5px;
+}
+
+:focus {
+    outline: 2px solid var(--focus);
+}
+
+    video {
+        width: 100%;
+        height: 50%;
+    }
+
+@media screen  and (min-width: 850px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    
+    .about {
+        grid-area: 1 / 1 / 2 / 4;
+        height: 300px;
+        padding-left: 100px;
+    }
+    
+    .education {
+        grid-area: 2 / 1 / 3 / 2; 
+        height: 300px;
+    }
+    
+    .courses {
+       grid-area: 2 / 2 / 3 / 3; 
+        height: 300px;
+    }
+    
+    .work {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-bottom: 100px;
+    }
+    
+    .volunteer {
+        grid-area: 3 / 2 / 4 / 3;
+        margin-bottom: 100px;
+        
+    }
+    .skills {
+       grid-area: 4 / 1 / 5 / 2;
+        height: 200px;
+        margin-top: 200px;
+    }
+    
+    .achievements {
+        grid-area: 4 / 2 / 5 / 3;
+        height: 200px;
+        margin-top: 200px;
+    }
+    
+    .objectives {
+        grid-area: 5 / 1 / 6 / 4;
+
+    }
+
+    .navbar2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .nav2 ul li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    .nav2 ul li a {
+
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+
+        color: var(--text);
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+
+    .nav2 {
+
+        top: 0;
+        left: 0;
+        background-color:var(--background);
+        padding: 0px;
+        display: inline-flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+
+        width: 100%;
+        border: solid var(--focus);
+
+    }
+    
+    .dropbutton {
+      display: none;
+    }
+    
+    video {
+        width: 100%;
+        height: 80%;
+    }
+
+}

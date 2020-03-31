@@ -1,0 +1,123 @@
+:root {
+    --text: #4d4d4d;  
+    --background: aliceblue;
+    --hover: white;
+    --border: grey;
+    --focus: black;
+    --required: darkred;
+}
+
+.form {
+    background-color: var(--background);
+    margin: 10%;
+    padding: 10%;
+    text-align: center;
+    border: solid var(--focus);
+}
+
+.header {
+    border: none;
+    background-color: white;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.email {
+    color: var(--required);
+    font-weight:500;
+    font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+    .form {
+        width: 130%;
+        margin-left : 25%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+        
+    .navbar2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .nav2 ul li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    .nav2 ul li a {
+
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+
+        color: var(--text);
+        font-size: 20px;
+        text-decoration: none;
+
+    }
+
+    .nav2 {
+
+        top: 0;
+        left: 0;
+        background-color:var(--background);
+        display: inline-flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+
+        width: 100%;
+
+    }
+    
+    .dropbutton {
+      display: none;
+    }
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.nav2 ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+.nav2 ul li a {
+    
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+
+    color: var(--text);
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.nav2 {
+
+    top: 0;
+    left: 0;
+    background-color:var(--background);
+    padding: 0px;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+    width: 100%;
+    
+}
