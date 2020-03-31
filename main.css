@@ -1,11 +1,13 @@
 :root {
     --text: #4d4d4d;  
     --background: aliceblue;
-    
-  }
+    --hover: white;
+    --border: grey;
+    --focus: black;
+}
 
 body {
-    background-color: lightgoldenrodyellow;
+
     background-image: url(images/pastel.jpg);
     
     
@@ -65,7 +67,7 @@ h1 {
 }
 
 .dropcontent a:hover {
-    background-color: white;
+    background-color: var(--hover);
 }
 
 .dropdown:hover .dropcontent {
@@ -73,13 +75,13 @@ h1 {
 }
 
 .dropdown:hover .dropbutton {
-    background-color: white;
+    background-color: var(--hover);
 }
 
 img {
     border-radius: 60%;
     float: left;
-    border: solid grey;
+    border: solid var(--border);
 }
 
 .info {
@@ -96,13 +98,13 @@ img {
 }
 
 nav a:hover {
-    background-color: white;
-     border: solid black;
+    background-color: var(--hover);
+     border: solid var(--focus);
     padding: 5px;
 }
 
 :focus {
-    outline: 2px solid black;
+    outline: 2px solid var(--focus);
 }
 
     video {

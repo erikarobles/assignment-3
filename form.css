@@ -1,8 +1,11 @@
 :root {
     --text: #4d4d4d;  
     --background: aliceblue;
-    
-  }
+    --hover: white;
+    --border: grey;
+    --focus: black;
+    --required: darkred;
+}
 
 .form {
     background-color: var(--background);
@@ -17,7 +20,7 @@
 }
 
 .email {
-    color: darkred;
+    color: var(--required);
     font-weight:500;
     font-style: italic;
 }
