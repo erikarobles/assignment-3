@@ -14,7 +14,9 @@
     </head>
     <body>
         <header>
-                        <div class="dropdown">
+            
+        <div class="dropdown">
+                
                 <button class="dropbutton">Menu</button>
                 <div class = dropcontent>
                     <nav class="navbar">
@@ -44,19 +46,49 @@
                     </nav>
                 </div>
             </div>
+            
+            <nav class="nav2">
+                <ul class = "navbar">
+                    <li class="nav-item">
+                        <a class="navlink" href ="main.html#about#about">About</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink" href="main.html#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink" href="main.html#work">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink" href="main.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="navlink" href="main.html#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink" href="main.html#objectives">Objectives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        
+            
         </header>
         
         <main class = "container">
             <section class="form">
                 <form method="POST" action="mailto:erobl234@mtroyal.ca" name="email">
                     
+                    <h1>Let's Connect!</h1>
                     <p>
-                        <label> Name: 
+                        <label>  Name (optional) :
                             <input name="fullname" type="text" size="25" value="" maxlength="25">
                         </label>
                     </p>
                     <p>
-                        <label> Email Address:
+                        <label><div class="email">Email Address (required) :</div>
                             <input name="email" type="email"size="25" placeholder="johndoe@gmail.ca" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         </label>
                     </p>
@@ -64,7 +96,7 @@
                         Message:
                     </p>
                         <label>
-                            <textarea name="message" rows="6" cols="100"> </textarea>
+                            <textarea class = "textarea" name="message" rows="6" cols="100"> </textarea>
                         </label>
                     
                     <p>
