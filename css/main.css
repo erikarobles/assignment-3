@@ -133,7 +133,7 @@ nav a:hover {
     
     .about {
         grid-area: 1 / 1 / 2 / 4;
-        height: 300px;
+        height: 400px;
         padding-left: 100px;
     }
     
@@ -159,7 +159,7 @@ nav a:hover {
     }
     .skills {
        grid-area: 4 / 1 / 5 / 2;
-        height: 200px;
+        height: 300px;
         margin-top: 200px;
     }
     
@@ -171,6 +171,11 @@ nav a:hover {
     
     .objectives {
         grid-area: 5 / 1 / 6 / 4;
+
+    }
+    
+        html {
+    background-repeat:repeat;
 
     }
 
